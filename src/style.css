@@ -14,6 +14,21 @@ body {
     width: calc(100vw - 12px);
 }
 
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 header {
     background-color: whitesmoke;
     border-radius: 4px;
@@ -53,7 +68,8 @@ button {
     margin-top: 4px;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     border: 1px solid blue;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -70,8 +86,8 @@ main ul {
 }
 
 main h2 {
-   font-size: 1.7em;
-   text-align: center;
+    font-size: 1.7em;
+    text-align: center;
 }
 
 main li {
@@ -104,17 +120,20 @@ main li p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-form, .modalcontent {
+form,
+.modalcontent {
     background-color: whitesmoke;
     border-radius: 4px;
     margin: 5% 10%;
     padding: 5%;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -124,13 +143,13 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
     background-color: cornflowerblue;
     color: whitesmoke;
     text-transform: uppercase;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
     color: white;
     text-decoration: underline;
 }
