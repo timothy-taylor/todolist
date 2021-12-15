@@ -1,17 +1,17 @@
-export default function(itemModal, projectModal, viewAllModal, renameProject){
-    const nav = document.createElement('UL');
+export default function (itemModal, projectModal, viewAllModal, renameProject) {
+    const nav = document.createElement("UL");
     nav.id = "nav";
-   
+
     const links = [
-        "New task", 
-        "Rename current project", 
-        "Delete current project", 
-        "Choose project", 
-        "New project"
+        "New task",
+        "Rename current project",
+        "Delete current project",
+        "Choose project",
+        "New project",
     ];
     links.forEach((link) => {
-        const li = document.createElement('LI');
-        const btn = document.createElement('BUTTON');
+        const li = document.createElement("LI");
+        const btn = document.createElement("BUTTON");
         btn.innerHTML = link;
         btn.id = link;
         btn.onclick = (e) => {
@@ -32,13 +32,17 @@ export default function(itemModal, projectModal, viewAllModal, renameProject){
                     projectModal.style.display = "block";
                     break;
             }
-        }
+        };
         li.appendChild(btn);
         nav.appendChild(li);
     });
 
-    window.addEventListener('click', (e) => {
-        if ([itemModal, projectModal, viewAllModal, renameProject].includes(e.target)) {
+    window.addEventListener("click", (e) => {
+        if (
+            [itemModal, projectModal, viewAllModal, renameProject].includes(
+                e.target
+            )
+        ) {
             itemModal.style.display = "none";
             projectModal.style.display = "none";
             viewAllModal.style.display = "none";

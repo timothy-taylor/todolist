@@ -1,8 +1,14 @@
-export default function(title, list = []){
+export default function (title, list = []) {
     const project = { title, list };
-    const rename = name => { project.title = name };
-    const add = item => { list.push(item) };
-    const remove = ix => { list.splice(ix,1) };
+    const rename = (name) => {
+        project.title = name;
+    };
+    const add = (item) => {
+        list.push(item);
+    };
+    const remove = (ix) => {
+        list.splice(ix, 1);
+    };
     const get = (key) => {
         switch (key) {
             case "title":
@@ -10,7 +16,7 @@ export default function(title, list = []){
             case "list":
                 return list;
             default:
-                return [title,list];
+                return [title, list];
         }
     };
 

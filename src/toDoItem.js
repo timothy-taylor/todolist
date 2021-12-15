@@ -1,4 +1,4 @@
-export default function(title, description, dueDate, priority){
+export default function (title, description, dueDate, priority) {
     const item = { title, description, dueDate, priority };
     const get = (key) => {
         switch (key) {
@@ -14,7 +14,7 @@ export default function(title, description, dueDate, priority){
                 return [title, description, dueDate, priority];
         }
     };
-    const set = (key,value) => {
+    const set = (key, value) => {
         switch (key) {
             case "title":
                 title = value;
@@ -31,4 +31,4 @@ export default function(title, description, dueDate, priority){
     };
 
     return { item, get, set };
-    }
+}
