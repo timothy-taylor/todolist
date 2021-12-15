@@ -16,14 +16,19 @@ body {
 
 header {
     background-color: whitesmoke;
+    border-radius: 4px;
     height: 4em;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
     font-size: 2.3em;
+    letter-spacing: 2px;
+    color: dimgray;
 }
 
 #nav {
@@ -52,6 +57,10 @@ button:hover, button:focus {
     border: 1px solid blue;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+    margin-top: 4em;
 }
 
 main ul {
@@ -101,9 +110,8 @@ main li p {
 form, .modalcontent {
     background-color: whitesmoke;
     border-radius: 4px;
-    margin: 10%;
+    margin: 5% 10%;
     padding: 5%;
-    width: 75%;
 }
 
 input, select, textarea {
@@ -129,10 +137,20 @@ input[type=submit]:hover {
 
 label {
     font-style: italic;
-    text-align: center;
 }
 
 form h2 {
     font-size: 2em;
     text-align: center;
+}
+
+footer {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+    margin-top: 4em;
+    letter-spacing: 4px;
 }

@@ -3,6 +3,7 @@ import Item from './toDoItem.js';
 import modal from './modals.js';
 import main from './main.js';
 import header from './header.js';
+import footer from './footer.js';
 import nav from './nav.js';
 import load from './load.js';
 import './style.css';
@@ -28,6 +29,7 @@ container.appendChild(main(
     library.active_project_ix,
     library.projects.length)
 );
+container.appendChild(footer());
 
 //
 //
